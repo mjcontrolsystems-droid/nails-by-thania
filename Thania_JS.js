@@ -54,15 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.rel = 'noopener';
     });
 
-    // 2b. Fotos que rotan en el inicio
-    const fotosHero = document.querySelectorAll('#heroRotativo img');
-    let fotoHero = 0;
-    setInterval(() => {
-        fotosHero[fotoHero].classList.remove('activa');
-        fotoHero = (fotoHero + 1) % fotosHero.length;
-        fotosHero[fotoHero].classList.add('activa');
-    }, 4500);
-
     // 3. Animación al hacer scroll
     const observador = new IntersectionObserver(entradas => {
         entradas.forEach(e => {
