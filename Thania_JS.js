@@ -4,7 +4,7 @@
 
 // ── CONFIGURACIÓN: cambiar SOLO aquí los datos del negocio ──
 const CONFIG = {
-    whatsapp: '50200000000',          // 502 + número de 8 dígitos, sin espacios ni +
+    whatsapp: '50250354336',          // 502 + número de 8 dígitos, sin espacios ni +
     horario: 'Lunes a sábado con cita previa.',
     ubicacion: 'Guatemala.',
     facebook: '#',                    // ej: https://www.facebook.com/...
