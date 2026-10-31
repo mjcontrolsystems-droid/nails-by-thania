@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nails by Thania | Uñas, Cejas, Pestañas y Cabello</title>
+  <meta name="description" content="Nails by Thania: uñas acrílicas, softgel, Gel UP, gel semipermanente, diseño y planchado de cejas, henna, pestañas pelo a pelo, planchado express, ondas y cortes para niño." />
+
+  <!-- Bootstrap 5 + Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Google Fonts:
+       Allura          → cursiva para la marca "Nails by Thania" (parecida a la firma de sus fotos)
+       Playfair Display → títulos
+       Poppins         → texto general -->
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="Thania_CSS.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+
+      <a class="marca" href="#inicio">
+        <span class="marca-nombre">Nails <small>by</small> Thania</span>
+        <span class="marca-sub">Beauty Studio</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cita">Reservar</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-thania btn-sm" href="#cita"><i class="bi bi-calendar-heart me-1"></i>Agendar cita</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- ══════════════════════════════════════════════
+       1. HERO – CARRUSEL
+  ══════════════════════════════════════════════ -->
+  <section id="inicio">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <!-- Slide 1: Uñas -->
+        <div class="carousel-item active">
+          <div class="hero-slide" style="background-image:url('images/unas/unas9.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <div class="hero-marca">Nails by Thania</div>
+              <h1 class="hero-titulo">Uñas que hablan<br><em>de tu estilo</em></h1>
+              <p class="hero-desc">Acrílicas, Softgel, Gel UP y gel semipermanente con diseños a tu gusto.</p>
+              <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="#cita" class="btn btn-thania"><i class="bi bi-calendar-heart me-2"></i>Agenda tu cita</a>
+                <a href="#servicios" class="btn btn-thania-outline">Ver servicios</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Cejas y pestañas -->
+        <div class="carousel-item">
+          <div class="hero-slide" style="background-image:url('images/cejas/cejas3.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <div class="hero-marca">Nails by Thania</div>
+              <h2 class="hero-titulo">Cejas y pestañas<br><em>que enmarcan tu mirada</em></h2>
+              <p class="hero-desc">Diseño y planchado de cejas, henna y pestañas pelo a pelo.</p>
+              <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="#cita" class="btn btn-thania"><i class="bi bi-calendar-heart me-2"></i>Reservar</a>
+                <a href="#galeria" class="btn btn-thania-outline">Ver trabajos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Cabello -->
+        <div class="carousel-item">
+          <div class="hero-slide" style="background-image:url('images/unas/unas11.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <div class="hero-marca">Nails by Thania</div>
+              <h2 class="hero-titulo">También cuidamos<br><em>tu cabello</em></h2>
+              <p class="hero-desc">Planchado express, ondas y cortes de cabello para niño.</p>
+              <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="#cita" class="btn btn-thania"><i class="bi bi-scissors me-2"></i>Agendar</a>
+                <a href="#nosotros" class="btn btn-thania-outline">Conócenos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       2. NOSOTROS
+  ══════════════════════════════════════════════ -->
+  <section id="nosotros" class="py-section bg-suave">
+    <div class="container">
+
+      <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-lg-5 reveal">
+          <div class="nosotros-img">
+            <img src="images/promo/promo2.jpg" alt="Nails by Thania" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="col-lg-7 reveal">
+          <p class="sec-tag">Quiénes somos</p>
+          <h2 class="sec-title">Bienvenida a <em>Nails by Thania</em></h2>
+          <div class="divisor ms-0"></div>
+          <p class="texto-intro">
+            Un espacio hecho con amor y dedicación para que salgas sintiéndote bella y segura.
+            Trabajamos con productos de calidad y cuidamos cada detalle, desde tus uñas hasta tu mirada y tu cabello.
+          </p>
+
+          <div class="row g-3 mt-2">
+            <div class="col-sm-6">
+              <div class="mini-card">
+                <i class="bi bi-gem"></i>
+                <div>
+                  <h6>Calidad</h6>
+                  <p>Productos profesionales y técnicas actuales.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="mini-card">
+                <i class="bi bi-heart"></i>
+                <div>
+                  <h6>Atención personal</h6>
+                  <p>Cada diseño se adapta a ti y a lo que buscas.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="mini-card">
+                <i class="bi bi-clock"></i>
+                <div>
+                  <h6>Horario</h6>
+                  <p id="txtHorario">Lunes a sábado con cita previa.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="mini-card">
+                <i class="bi bi-geo-alt"></i>
+                <div>
+                  <h6>Ubicación</h6>
+                  <p id="txtUbicacion">Guatemala.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       3. SERVICIOS
+       Los botones "Agendar" usan data-servicio; el JS arma el link de WhatsApp.
+  ══════════════════════════════════════════════ -->
+  <section id="servicios" class="py-section">
+    <div class="container">
+
+      <div class="text-center mb-5 reveal">
+        <p class="sec-tag">Lo que hacemos</p>
+        <h2 class="sec-title">Nuestros <em>Servicios</em></h2>
+        <div class="divisor"></div>
+      </div>
+
+      <!-- ── UÑAS ── -->
+      <h3 class="cat-titulo reveal"><i class="bi bi-brush"></i> Uñas</h3>
+      <div class="row g-4 mb-5">
+
+        <div class="col-sm-6 col-lg-3 reveal">
+          <div class="serv-card">
+            <div class="serv-img"><img src="images/unas/unas3.jpg" alt="Uñas acrílicas" loading="lazy" /></div>
+            <div class="serv-body">
+              <h5>Uñas Acrílicas</h5>
+              <p>Largo y forma a tu gusto, resistentes y con el diseño que imagines.</p>
+              <a href="#" class="btn-agendar" data-servicio="Uñas acrílicas">Agendar <i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 reveal">
+          <div class="serv-card">
+            <div class="serv-img"><img src="images/unas/unas13.jpg" alt="Softgel" loading="lazy" /></div>
+            <div class="serv-body">
+              <h5>Softgel</h5>
+              <p>Tips de gel flexibles y livianos, acabado natural y elegante.</p>
+              <a href="#" class="btn-agendar" data-servicio="Softgel">Agendar <i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 reveal">
+          <div class="serv-card">
+            <div class="serv-img"><img src="images/unas/unas11.jpg" alt="Gel UP" loading="lazy" /></div>
+            <div class="serv-body">
+              <h5>Gel UP</h5>
+              <p>Sistema Gel UP: uñas firmes, delgadas y de larga duración.</p>
+              <a href="#" class="btn-agendar" data-servicio="Gel UP">Agendar <i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 reveal">
+          <div class="serv-card">
+            <div class="serv-img"><img src="images/unas/unas14.jpg" alt="Gel semipermanente" loading="lazy" /></div>
+            <div class="serv-body">
+              <h5>Gel Semipermanente</h5>
+              <p>Color brillante sobre tu uña natural que dura semanas sin descascararse.</p>
+              <a href="#" class="btn-agendar" data-servicio="Gel semipermanente">Agendar <i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── CEJAS Y PESTAÑAS ── -->
+      <h3 class="cat-titulo reveal"><i class="bi bi-eye"></i> Cejas y Pestañas</h3>
+      <div class="row g-4 mb-5">
+
+        <div class="col-sm-6 col-lg-3 reveal">
+          <div class="serv-card">
+            <div class="serv-img"><img src="images/cejas/cejas2.jpg" alt="Diseño de cejas" loading="lazy" /></div>
+            <div class="serv-body">
+              <h5>Diseño de Cejas</h5>
+              <p>Forma ideal para tu rostro, perfilado y definición con precisión.</p>
+              <a href="#" class="btn-agendar" data-servicio="Diseño de cejas">Agendar <i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 reveal">
+          <div class="serv-card">
+            <div class="serv-img"><img src="images/cejas/cejas1.jpg" alt="Aplicación de henna" loading="lazy" /></div>
+            <div class="serv-body">
+              <h5>Aplicación de Henna</h5>
+              <p>Rellena y da color a tus cejas con un efecto natural que dura días.</p>
+              <a href="#" class="btn-agendar" data-servicio="Aplicación de henna">Agendar <i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 reveal">
+          <div class="serv-card">
+            <div class="serv-img"><img src="images/cejas/cejas4.jpg" alt="Planchado de cejas" loading="lazy" /></div>
+            <div class="serv-body">
+              <h5>Planchado de Cejas</h5>
+              <p>Cejas peinadas, ordenadas y con volumen, efecto laminado.</p>
+              <a href="#" class="btn-agendar" data-servicio="Planchado de cejas">Agendar <i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 reveal">
+          <div class="serv-card">
+            <div class="serv-img"><img src="images/pestanas/pestanas1.jpg" alt="Pestañas pelo a pelo" loading="lazy" /></div>
+            <div class="serv-body">
+              <h5>Pestañas Pelo a Pelo</h5>
+              <p>Extensiones una por una para una mirada natural y con más volumen.</p>
+              <a href="#" class="btn-agendar" data-servicio="Pestañas pelo a pelo">Agendar <i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── CABELLO (sin fotos todavía: tarjetas con ícono) ── -->
+      <h3 class="cat-titulo reveal"><i class="bi bi-scissors"></i> Cabello</h3>
+      <div class="row g-4">
+
+        <div class="col-md-4 reveal">
+          <div class="serv-card serv-icono">
+            <div class="icono-circulo"><i class="bi bi-wind"></i></div>
+            <div class="serv-body text-center">
+              <h5>Planchado Express</h5>
+              <p>Cabello liso, suave y con brillo en poco tiempo.</p>
+              <a href="#" class="btn-agendar" data-servicio="Planchado express">Agendar <i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 reveal">
+          <div class="serv-card serv-icono">
+            <div class="icono-circulo"><i class="bi bi-tsunami"></i></div>
+            <div class="serv-body text-center">
+              <h5>Ondas</h5>
+              <p>Ondas definidas y con movimiento para cualquier ocasión.</p>
+              <a href="#" class="btn-agendar" data-servicio="Ondas">Agendar <i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 reveal">
+          <div class="serv-card serv-icono">
+            <div class="icono-circulo"><i class="bi bi-scissors"></i></div>
+            <div class="serv-body text-center">
+              <h5>Cortes para Niño</h5>
+              <p>Cortes modernos y con paciencia para los más pequeños.</p>
+              <a href="#" class="btn-agendar" data-servicio="Corte de cabello para niño">Agendar <i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       4. GALERÍA (filtros + visor)
+  ══════════════════════════════════════════════ -->
+  <section id="galeria" class="py-section bg-suave">
+    <div class="container">
+
+      <div class="text-center mb-4 reveal">
+        <p class="sec-tag">Galería de fotos</p>
+        <h2 class="sec-title">Nuestros <em>trabajos</em></h2>
+        <div class="divisor"></div>
+      </div>
+
+      <div class="filtros text-center mb-4 reveal">
+        <button class="filtro activo" data-filtro="todos">Todos</button>
+        <button class="filtro" data-filtro="unas">Uñas</button>
+        <button class="filtro" data-filtro="cejas">Cejas</button>
+        <button class="filtro" data-filtro="pestanas">Pestañas</button>
+      </div>
+
+      <!-- El JS llena esta cuadrícula con las fotos de la lista GALERIA -->
+      <div class="galeria-grid" id="galeriaGrid"></div>
+
+    </div>
+  </section>
+
+  <!-- Visor de fotos (modal) -->
+  <div class="modal fade" id="visorModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content visor-contenido">
+        <button type="button" class="btn-close btn-close-white visor-cerrar" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        <button class="visor-nav visor-prev" id="visorPrev" aria-label="Anterior"><i class="bi bi-chevron-left"></i></button>
+        <img src="" alt="Trabajo de Nails by Thania" id="visorImg" />
+        <button class="visor-nav visor-next" id="visorNext" aria-label="Siguiente"><i class="bi bi-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════
+       5. FORMULARIO DE CITA → WHATSAPP
+  ══════════════════════════════════════════════ -->
+  <section id="cita" class="py-section">
+    <div class="container">
+
+      <div class="text-center mb-5 reveal">
+        <p class="sec-tag">Reserva tu espacio</p>
+        <h2 class="sec-title">Agenda tu <em>Cita</em></h2>
+        <p class="texto-intro mx-auto" style="max-width:480px;">
+          Llena tus datos y te enviamos a WhatsApp para confirmar tu cita.
+        </p>
+        <div class="divisor"></div>
+      </div>
+
+      <div class="form-wrapper reveal">
+        <div class="text-center mb-4">
+          <div class="form-marca">¡Te esperamos!</div>
+        </div>
+
+        <form id="citaForm" class="needs-validation" novalidate>
+
+          <div class="mb-3">
+            <label class="form-label" for="nombreCliente">Nombre completo</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-person"></i></span>
+              <input type="text" class="form-control" id="nombreCliente" placeholder="Ej: María García" required />
+              <div class="invalid-feedback">Ingresa tu nombre.</div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="telefonoCliente">Teléfono</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-whatsapp"></i></span>
+              <input type="tel" class="form-control" id="telefonoCliente" placeholder="Ej: 5555 0000" required pattern="[\d\s\+\-\(\)]{8,15}" />
+              <div class="invalid-feedback">Ingresa un número válido.</div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="servicioCliente">Servicio</label>
+            <select class="form-select" id="servicioCliente" required>
+              <option value="" selected disabled>Selecciona un servicio</option>
+              <optgroup label="Uñas">
+                <option>Uñas acrílicas</option>
+                <option>Softgel</option>
+                <option>Gel UP</option>
+                <option>Gel semipermanente</option>
+              </optgroup>
+              <optgroup label="Cejas y pestañas">
+                <option>Diseño de cejas</option>
+                <option>Aplicación de henna</option>
+                <option>Planchado de cejas</option>
+                <option>Pestañas pelo a pelo</option>
+              </optgroup>
+              <optgroup label="Cabello">
+                <option>Planchado express</option>
+                <option>Ondas</option>
+                <option>Corte de cabello para niño</option>
+              </optgroup>
+            </select>
+            <div class="invalid-feedback">Selecciona un servicio.</div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 mb-3">
+              <label class="form-label" for="fechaCliente">Fecha</label>
+              <input type="date" class="form-control" id="fechaCliente" required />
+              <div class="invalid-feedback">Selecciona una fecha.</div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <label class="form-label" for="horaCliente">Hora (opcional)</label>
+              <input type="time" class="form-control" id="horaCliente" />
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label class="form-label" for="mensajeCliente">Mensaje (opcional)</label>
+            <textarea class="form-control" id="mensajeCliente" rows="3" placeholder="Ej: diseño que quieres, color, largo..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-thania w-100 py-3" id="btnCita">
+            <i class="bi bi-whatsapp me-2"></i>Enviar por WhatsApp
+          </button>
+        </form>
+
+        <div id="mensajeExito" class="text-center mt-4 d-none">
+          <div class="form-marca">¡Gracias!</div>
+          <p class="texto-intro">Se abrió WhatsApp con tu solicitud. Solo dale enviar y te confirmamos tu cita.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md-4 text-center text-md-start">
+          <div class="footer-marca">Nails by Thania</div>
+          <p class="footer-texto">Uñas, cejas, pestañas y cabello. Hecho con amor y dedicación para que te sientas bella.</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <h6 class="footer-titulo">Navegación</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#cita">Reservar cita</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 text-center text-md-end">
+          <h6 class="footer-titulo">Síguenos</h6>
+          <div class="d-flex gap-3 justify-content-center justify-content-md-end">
+            <a href="#" class="social-btn" id="lnkWhatsapp" target="_blank" rel="noopener" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" class="social-btn" id="lnkFacebook" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-btn" id="lnkInstagram" target="_blank" rel="noopener" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-btn" id="lnkTiktok" target="_blank" rel="noopener" title="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="footer-divisor" />
+      <p class="footer-copy">© <span id="anio">2026</span> Nails by Thania · Guatemala · By: Josué Cruz Sagastume · MJ Control Systems</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="#" class="wa-flotante" id="waFlotante" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="Thania_JS.js"></script>
+</body>
+
+</html>
