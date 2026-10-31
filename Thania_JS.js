@@ -10,7 +10,7 @@ const CONFIG = {
     facebook: '#',                    // ej: https://www.facebook.com/...
     instagram: '#',                   // ej: https://www.instagram.com/...
     tiktok: '#',                      // ej: https://www.tiktok.com/@...
-    correoDev: 'josue0206.sagas@gmail.com' // correo del desarrollador (link del footer)
+    correoDev: 'mjcontrolsystems@gmail.com' // correo del desarrollador (link del footer)
 };
 
 // ── FOTOS DE LA GALERÍA (categoría + ruta) ──
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'https://mail.google.com/mail/?view=cm&fs=1' +
         `&to=${encodeURIComponent(CONFIG.correoDev)}` +
         `&su=${encodeURIComponent('Quiero una página web para mi negocio')}` +
-        `&body=${encodeURIComponent('Hola Josué, vi la página de Nails by Thania y me interesa una página web. ')}`;
+        `&body=${encodeURIComponent('Hola MJ Control Systems, vi la página de Nails by Thania y me interesa una página web. ')}`;
 
     // 2. Botones "Agendar" de cada servicio → WhatsApp
     document.querySelectorAll('.btn-agendar').forEach(btn => {
