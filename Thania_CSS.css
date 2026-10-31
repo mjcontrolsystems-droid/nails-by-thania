@@ -39,7 +39,10 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
 }
 .navbar.scrolled { box-shadow: 0 4px 25px rgba(232, 85, 154, .15); }
 
-.marca { text-decoration: none; line-height: 1; display: flex; flex-direction: column; }
+.marca { text-decoration: none; line-height: 1; display: flex; align-items: center; gap: .7rem; }
+.marca-texto { display: flex; flex-direction: column; }
+.marca-logo { height: 62px; width: 62px; border-radius: 50%; box-shadow: 0 4px 14px rgba(27, 20, 24, .25); transition: transform .3s; }
+.marca:hover .marca-logo { transform: scale(1.05) rotate(-3deg); }
 .marca-nombre {
     font-family: 'Allura', cursive;
     font-size: 2.3rem;
@@ -349,6 +352,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
 
 /* ── FOOTER ── */
 .footer { background: var(--negro); color: rgba(255, 255, 255, .6); padding: 60px 0 25px; }
+.footer-logo { height: 120px; width: 120px; border-radius: 50%; margin-bottom: 1rem; box-shadow: 0 0 30px rgba(201, 164, 106, .25); }
 .footer-marca { font-family: 'Allura', cursive; font-size: 2.6rem; color: var(--rosa-claro); line-height: 1; margin-bottom: .6rem; }
 .footer-texto { font-size: .85rem; line-height: 1.8; }
 .footer-titulo { color: #fff; font-size: 1.05rem; margin-bottom: 1rem; }
@@ -412,7 +416,8 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
     #heroCarousel .carousel-control-next { display: none; }
     .py-section { padding: 65px 0; }
     .form-wrapper { padding: 1.6rem; }
-    .marca-nombre { font-size: 2rem; }
+    .marca-nombre { font-size: 1.7rem; }
+    .marca-logo { height: 50px; width: 50px; }
     .galeria-grid { columns: 2; column-gap: 10px; }
     .galeria-item { margin-bottom: 10px; }
 }
