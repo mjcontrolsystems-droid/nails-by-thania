@@ -17,7 +17,7 @@
        Poppins         → texto general -->
   <link href="https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="Thania_CSS.css?v=3" />
+  <link rel="stylesheet" href="Thania_CSS.css?v=4" />
   <link rel="icon" type="image/x-icon" href="images/logos/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/logos/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="images/logos/favicon-16x16.png" />
@@ -65,73 +65,36 @@
   <!-- ══════════════════════════════════════════════
        1. HERO – CARRUSEL
   ══════════════════════════════════════════════ -->
-  <section id="inicio">
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
+  <section id="inicio" class="hero">
+    <div class="container">
+      <div class="row g-4 g-lg-5 align-items-center">
 
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-
-      <div class="carousel-inner">
-
-        <!-- Slide 1: Uñas -->
-        <div class="carousel-item active">
-          <div class="hero-slide" style="background-image:url('images/unas/unas9.jpg');">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-              <div class="hero-marca">Nails by Thania</div>
-              <h1 class="hero-titulo">Uñas que hablan<br><em>de tu estilo</em></h1>
-              <p class="hero-desc">Acrílicas, Softgel, Gel UP y gel semipermanente con diseños a tu gusto.</p>
-              <div class="d-flex gap-3 justify-content-center flex-wrap">
-                <a href="#cita" class="btn btn-thania"><i class="bi bi-calendar-heart me-2"></i>Agenda tu cita</a>
-                <a href="#servicios" class="btn btn-thania-outline">Ver servicios</a>
-              </div>
-            </div>
+        <div class="col-lg-6 hero-texto">
+          <p class="hero-kicker">Uñas <span>·</span> Cejas <span>·</span> Pestañas <span>·</span> Cabello</p>
+          <h1 class="hero-titulo">Uñas que hablan<br><em>de tu estilo</em></h1>
+          <p class="hero-desc">Acrílicas, Softgel, Gel UP y gel semipermanente, diseño y planchado de cejas, henna, pestañas pelo a pelo, planchado express, ondas y cortes para niño.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="#cita" class="btn btn-thania"><i class="bi bi-calendar-heart me-2"></i>Agenda tu cita</a>
+            <a href="#galeria" class="btn btn-thania-outline">Ver trabajos</a>
           </div>
         </div>
 
-        <!-- Slide 2: Cejas y pestañas -->
-        <div class="carousel-item">
-          <div class="hero-slide" style="background-image:url('images/cejas/cejas3.jpg');">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-              <div class="hero-marca">Nails by Thania</div>
-              <h2 class="hero-titulo">Cejas y pestañas<br><em>que enmarcan tu mirada</em></h2>
-              <p class="hero-desc">Diseño y planchado de cejas, henna y pestañas pelo a pelo.</p>
-              <div class="d-flex gap-3 justify-content-center flex-wrap">
-                <a href="#cita" class="btn btn-thania"><i class="bi bi-calendar-heart me-2"></i>Reservar</a>
-                <a href="#galeria" class="btn btn-thania-outline">Ver trabajos</a>
-              </div>
+        <div class="col-lg-6">
+          <div class="hero-collage">
+            <!-- Foto grande: rota entre varias fotos (ver JS) -->
+            <div class="collage-grande" id="heroRotativo">
+              <img src="images/unas/unas9.jpg" alt="Uñas acrílicas negras con brillo" class="activa" />
+              <img src="images/cejas/cejas2.jpg" alt="Diseño de cejas antes y después" />
+              <img src="images/unas/unas11.jpg" alt="Uñas Gel UP rojas" />
+              <img src="images/pestanas/pestanas1.jpg" alt="Pestañas pelo a pelo" />
             </div>
-          </div>
-        </div>
-
-        <!-- Slide 3: Cabello -->
-        <div class="carousel-item">
-          <div class="hero-slide" style="background-image:url('images/unas/unas11.jpg');">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-              <div class="hero-marca">Nails by Thania</div>
-              <h2 class="hero-titulo">También cuidamos<br><em>tu cabello</em></h2>
-              <p class="hero-desc">Planchado express, ondas y cortes de cabello para niño.</p>
-              <div class="d-flex gap-3 justify-content-center flex-wrap">
-                <a href="#cita" class="btn btn-thania"><i class="bi bi-scissors me-2"></i>Agendar</a>
-                <a href="#nosotros" class="btn btn-thania-outline">Conócenos</a>
-              </div>
-            </div>
+            <div class="collage-chica arriba"><img src="images/unas/unas13.jpg" alt="Uñas Softgel" /></div>
+            <div class="collage-chica abajo"><img src="images/cejas/cejas4.jpg" alt="Planchado de cejas" /></div>
+            <img src="images/logos/logo_trn.png" alt="" class="collage-sello" aria-hidden="true" />
           </div>
         </div>
 
       </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span>
-      </button>
     </div>
   </section>
 
@@ -552,7 +515,7 @@
   </a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="Thania_JS.js?v=3"></script>
+  <script src="Thania_JS.js?v=4"></script>
 </body>
 
 </html>
