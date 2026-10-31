@@ -9,7 +9,8 @@ const CONFIG = {
     ubicacion: 'Guatemala.',
     facebook: '#',                    // ej: https://www.facebook.com/...
     instagram: '#',                   // ej: https://www.instagram.com/...
-    tiktok: '#'                       // ej: https://www.tiktok.com/@...
+    tiktok: '#',                      // ej: https://www.tiktok.com/@...
+    correoDev: 'josue0206.sagas@gmail.com' // correo del desarrollador (link del footer)
 };
 
 // ── FOTOS DE LA GALERÍA (categoría + ruta) ──
@@ -38,6 +39,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('lnkFacebook').href = CONFIG.facebook;
     document.getElementById('lnkInstagram').href = CONFIG.instagram;
     document.getElementById('lnkTiktok').href = CONFIG.tiktok;
+
+    // Link del desarrollador → abre Gmail con el correo listo para escribir
+    document.getElementById('lnkDev').href =
+        'https://mail.google.com/mail/?view=cm&fs=1' +
+        `&to=${encodeURIComponent(CONFIG.correoDev)}` +
+        `&su=${encodeURIComponent('Quiero una página web para mi negocio')}` +
+        `&body=${encodeURIComponent('Hola Josué, vi la página de Nails by Thania y me interesa una página web. ')}`;
 
     // 2. Botones "Agendar" de cada servicio → WhatsApp
     document.querySelectorAll('.btn-agendar').forEach(btn => {

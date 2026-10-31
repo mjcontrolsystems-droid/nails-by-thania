@@ -367,6 +367,21 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
 .social-btn:hover { background: var(--rosa); border-color: var(--rosa); color: #fff; transform: translateY(-3px); }
 .footer-divisor { border-color: rgba(255, 255, 255, .1); margin: 2rem 0 1.2rem; }
 .footer-copy { text-align: center; font-size: .75rem; margin: 0; }
+.footer-dev {
+    text-align: center;
+    font-size: .78rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed rgba(255, 255, 255, .1);
+}
+.footer-dev a {
+    color: var(--rosa-claro);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: all .3s;
+}
+.footer-dev a:hover { color: var(--rosa); border-bottom-color: var(--rosa); }
 
 /* ── WHATSAPP FLOTANTE ── */
 .wa-flotante {
